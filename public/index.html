@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scorpios Executive Agent</title>
+    <link rel="icon" type="image/png" href="./scorpios.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="hero">
+            <div class="brand-block">
+                <img src="./scorpios.png" alt="Scorpios logo" class="logo">
+            </div>
+            <div class="hero-text">
+                <h1>Scorpios Executive Agent</h1>
+                <p class="lede">A calm, strategic partner that balances brand soul with commercial expansion. Always composed.</p>
+            </div>
+            <div class="hero-cta">
+                <button id="run-btn" class="primary">Run Executive Protocol</button>
+                <div class="status-dot"><span></span>Live Demo</div>
+            </div>
+        </header>
+
+        <main>
+            <section class="layout">
+                <div id="input-area" class="panel">
+                    <div class="panel-header">
+                        <div>
+                            <p class="eyebrow">Operational Streams</p>
+                            <h2>Inputs on Deck</h2>
+                        </div>
+                        <p class="microcopy"></p>
+                    </div>
+
+                    <div class="inputs-grid">
+                        <div class="input-card">
+                            <div class="card-header">
+                                <h3>Inbox</h3><span class="pill">Bodrum / Mykonos</span>
+                            </div>
+                            <textarea id="emails-input" class="hidden-input" spellcheck="false"></textarea>
+                            <div id="emails-preview" class="mini-preview"></div>
+                        </div>
+
+                        <div class="input-card">
+                            <div class="card-header">
+                                <h3>Calendar</h3><span class="pill">Today</span>
+                            </div>
+                            <textarea id="calendar-input" class="hidden-input" spellcheck="false"></textarea>
+                            <div id="calendar-preview" class="mini-preview"></div>
+                        </div>
+
+                        <div class="input-card">
+                            <div class="card-header">
+                                <h3>Market Intel</h3><span class="pill pill-outline">Field Notes</span>
+                            </div>
+                            <textarea id="briefing-input" class="hidden-input" spellcheck="false"></textarea>
+                            <div class="mini-preview single" id="briefing-preview"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel console">
+                    <div class="panel-header">
+                        <div>
+                            <p class="eyebrow">Agent Theater</p>
+                            <h2>Thinking Log</h2>
+                        </div>
+                        <p class="microcopy">Slow, deliberate synthesis.</p>
+                    </div>
+                    <div class="progress-bar">
+                        <div id="progress-bar-fill"></div>
+                    </div>
+                    <div id="agent-logs"></div>
+                </div>
+            </section>
+
+            <section id="results-area" class="results-grid" style="display:none;">
+                <div class="panel results-brief">
+                    <div class="panel-header">
+                        <div>
+                            <p class="eyebrow">Executive Brief</p>
+                            <h2>Risk & Opportunity</h2>
+                        </div>
+                        <p class="microcopy">Brand soul first, commerce close second.</p>
+                    </div>
+                    <div class="brief-grid">
+                        <div class="brief-card risk">
+                            <p class="eyebrow">Risk</p>
+                            <div id="card-risk" class="brief-copy"></div>
+                        </div>
+                        <div class="brief-card opp">
+                            <p class="eyebrow">Opportunity</p>
+                            <div id="card-opp" class="brief-copy"></div>
+                        </div>
+                        <div class="brief-card market">
+                            <p class="eyebrow">Market</p>
+                            <div id="card-market" class="brief-copy"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel actions">
+                    <div class="panel-header">
+                        <div>
+                            <p class="eyebrow">Execution List</p>
+                            <h2>Decide / Delegate / Invest</h2>
+                        </div>
+                        <p class="microcopy">Designed for immediate action.</p>
+                    </div>
+                    <div id="action-list" class="action-list"></div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>Scorpios Executive Agent — demo mode. Crafted for hospitality operators who lead with ritual.</p>
+        </footer>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
+
