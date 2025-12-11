@@ -5,10 +5,11 @@
   ],
   "routes": [
     { "src": "/api/(.*)", "dest": "/api/index.py" },
-    { "src": "/(.*)\\.(js|css|png|ico|svg)", "dest": "/public/$1.$2" },
-    { "src": "/favicon.(.*)", "dest": "/public/scorpios.png" },
-    { "src": "/", "dest": "/public/index.html" },
-    { "src": "/(.*)", "dest": "/public/index.html" }
+    { "src": "/(.*)\\.(js|css|png|ico|svg|json|txt|webmanifest)", "dest": "/$1.$2" },
+    { "src": "/_next/(.*)", "dest": "/_next/$1" },
+    { "src": "/favicon.(.*)", "dest": "/scorpios.png" },
+    { "src": "/", "dest": "/index.html" },
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
 
